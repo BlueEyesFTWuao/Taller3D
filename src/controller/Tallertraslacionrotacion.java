@@ -36,7 +36,8 @@ public class Tallertraslacionrotacion extends Application {
         //creación del cubo
         double lado = 100;
         c=new Cylinder(200, 200);
-       
+        //cu=new Cube (200,200);
+        c.setVisible(false);
         //material
         Image imageDiffuseAjedrez = new Image(getClass().getResource("/Texturas/madera.jpg").toExternalForm());
        

@@ -62,6 +62,7 @@ public class FXMLDocumentController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TO DO
+        
         contadorBoxTraslacion = -200;
         contadorBoxRot1 = 0;
         contadorBoxRot2 = 0;
@@ -107,7 +108,7 @@ public class FXMLDocumentController implements Initializable {
     */
     @FXML
     public void handleDraggedSliderAngle() {
-//        resetBoxRot1 = false;
+       resetBoxRot1 = false;
 //        bb3.setRotate(slAngle.getValue());        
     }
     
