@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="546.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLDocumentController">
+   <children>
+      <Pane fx:id="panelGrafico" layoutX="39.0" layoutY="45.0" prefHeight="384.0" prefWidth="535.0" />
+      <Slider fx:id="slAngle" layoutX="89.0" layoutY="463.0" onMouseDragged="#handleDraggedSliderAngle" onMousePressed="#handleDraggedSliderAngle" onMouseReleased="#handleMouseRealeasedSlider" prefHeight="18.0" prefWidth="435.0" />
+      <Slider fx:id="slAngle1" layoutX="89.0" layoutY="500.0" onMouseDragged="#handleDraggedSliderAngle1" onMousePressed="#handleDraggedSliderAngle1" onMouseReleased="#handleMouseRealeasedSlider1" prefHeight="18.0" prefWidth="435.0" />
+      <Button layoutX="539.0" layoutY="481.0" mnemonicParsing="false" onAction="#handleButtonTerminar" text="Terminar" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="612.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Crear">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#icilindro" text="Cilindro" />
+                  <MenuItem mnemonicParsing="false" onAction="#icubo" text="Cubo" />
+                  <MenuItem mnemonicParsing="false" onAction="#iesfera" text="Esfera" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
